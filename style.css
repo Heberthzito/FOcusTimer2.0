@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-card-primary:#e1e1e6;
+    --bg-card-secondery:#02799d;
+    --tt-color:#323238;
+    --tt-color-btn:white;
+
+
+}
+
+body {
+   
+    display: grid;
+    place-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between;
+    padding: 0 19.2rem;
+    
+}
+
+
+
+#app {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Alinha os elementos no centro vertical */
+    align-items: center; /* Alinha os elementos no centro horizontal */
+}
+
+#controls {
+    margin-top: 20px; /* Espaçamento entre o timer e os botões */
+}
+
+#app, #cards {
+    width: calc(50% - 9.6rem); /* Define a largura de cada elemento (50% da largura total menos 9.6rem de espaçamento lateral) */
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+    grid-gap: 10px; /* Espaçamento entre os botões */
+
+
+}
+
+#app button {
+    margin: 1.1rem;
+   
+}
+
+#cards button {
+    border-radius: 2.4rem;
+    width: 13.8rem;
+    height: 15.2rem;
+
+
+    margin-right: 3.2rem; /* Espaçamento de 3.2rem entre os botões */
+    margin-bottom: 3.2rem; /* Espaçamento de 3.2rem entre as linhas de botões */
+
+}
+
+#timer {
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 12.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    color:var(--tt-color-btn);
+}
+
+#controls {
+    margin-top: 1.6rem;
+    padding: 2.2rem 4rem;
+    gap: 1.6rem;
+    border-radius: 999rem;
+}
+
+#app button {
+    background-color:transparent;
+    border: 0;
+    color: var(--tt-color-btn);  
+
+    cursor: pointer;
+
+    font-size: 6.4rem;
+}
+
+#cards button {
+    background-color: var(--bg-card-primary);
+    border: 0;
+    color: var(--tt-color);  
+
+    cursor: pointer;
+
+    font-size: 6.4rem;
+}
+
+#cards button.pressed {
+    border: none; /* Por exemplo, altere a borda para destacar visualmente o botão */
+    background-color: var(--bg-card-secondery); /* Altere a cor de fundo para destacar visualmente o botão */
+    color: var(--tt-color-btn);
+}
+
+
+#cards button:active {
+    background-color: var(--bg-card-secondery); /* Defina a cor desejada para quando o botão estiver ativo */
+    color: var(--tt-color-btn);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+   
+}
+
+.floresta {
+    background-image: url(./assets/floresta.jpg);
+}
+
+.chuva {
+    background-image: url(./assets/chuva.jpg);
+}
+
+.cafeteria {
+    background-image: url(./assets/cafeteria.jpg);
+}
+
+.lareira {
+    background-image: url(./assets/lareira.jpg);
+}
+
+#backgroud {
+    background-image:url(./assets/madeira.jpg);
+    border-radius: 20%;
+    padding: 3rem;
+}
+
+#cards button:hover {
+    background-color: #afecff;
+}
+
+#app button:hover {
+    background-color: #bb712c;
+}

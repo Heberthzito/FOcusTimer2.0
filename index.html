@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer 2.0</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./scripts.js/main.js" defer></script>
+
+</head>
+<body>
+    <div id="backgroud"> 
+    <div class="container">
+        <div id="app">
+            <section id="timer" class="flex">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            <section id="controls" class="flex">
+                <button id="playBtn" class="ph ph-play-circle"></button>
+                <button id="pauseBtn" class="ph ph-pause-circle"></button>
+                <button id="plusBtn" class="ph ph-plus-circle"></button>
+                <button id="minusBtn" class="ph ph-minus-circle"></button>
+            </section>
+        </div>
+        <div id="cards">
+            <button id="btn-floresta" class="ph ph-tree"></button>
+            <button id="btn-chuva" class="ph ph-cloud-snow"></button>
+            <button id="btn-cafeteria" class="ph ph-storefront"></button>
+            <button id="btn-lareira" class="ph ph-campfire"></button>
+        </div>
+    </div>
+    </div>
+    <!-- Adicione as tags de áudio para cada botão -->
+    <audio id="audio-floresta" src="./sounds/Floresta.wav"></audio>
+    <audio id="audio-chuva" src="./sounds/Chuva.wav"></audio>
+    <audio id="audio-cafeteria" src="./sounds/Cafeteria.wav"></audio>
+    <audio id="audio-lareira" src="./sounds/Lareira.wav"></audio>
+    <div id="container"></div>
+
+    <script src="scripts.js/main.js"></script>
+</body>
+</html>
